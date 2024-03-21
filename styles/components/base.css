@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    background-color: #e6e6e6;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+hr{
+    border: none;
+    height: 1.4px;
+    background-color: rgba(0, 153, 255, 0.8);
+    
+}
+
+.mainContainer {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+main{
+    position: relative;
+    padding: 4em 0;
+    background-color: #101321;
+}
+
+main .shape1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+    z-index: 0;
+}
+main .shape2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 40%;
+    z-index: 0;
+}
+
+#back-to-top {
+    position: fixed;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1b417a;;
+    border-radius: 50%;
+    margin: 3em;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.12s ease-in-out;
+}
+
+#back-to-top:hover{
+    background-color: rgb(15, 25, 53);
+}

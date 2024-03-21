@@ -1,0 +1,120 @@
+section .articleArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+section .articleArea article {
+    position: relative;
+    background-color: #1B1525;
+    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
+    border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 8px;
+    z-index: 1;
+    transition: 0.12s ease-in-out;
+}
+section .articleArea article:hover{
+    scale: 1.05;
+}
+
+article .articleContainer {
+    padding: 6px 20px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: 0.12s ease-in-out;
+}
+
+article img:hover {
+    opacity: 70%;
+}
+
+article hr {
+    margin-bottom: 4px;
+}
+
+article a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.12s ease-in-out;
+}
+
+article a:hover {
+    color: #00d5ff;
+    text-shadow: 0 2px 20px #00d5ff50;
+}
+
+article h2 {
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+}
+
+article p {
+    font-size: 16px;
+    color: #A8A2B3;
+    margin-bottom: 15px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    /* TEXT LENGHT */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.paginationArea{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.pagination a {
+    font-size: 1.3em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+    transition: 0.12s ease-in-out;
+}
+
+.pagination a.active {
+    background-color: #0574be;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #c0c0c0;
+    color: #000;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+    section .articleArea {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section .articleArea {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    section .articleArea {
+        grid-template-columns: 1fr;
+    }
+}
