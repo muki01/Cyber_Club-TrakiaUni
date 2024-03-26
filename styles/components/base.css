@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -58,7 +59,7 @@ main .shape2{
 
 #back-to-top {
     position: fixed;
-    display: block;
+    display: none;
     text-decoration: none;
     cursor: pointer;
     padding: 1em;
@@ -77,4 +78,11 @@ main .shape2{
 
 #back-to-top:hover{
     background-color: rgb(15, 25, 53);
+}
+
+@media screen and (max-width: 620px) {
+    #back-to-top{
+        padding: 0.8em;
+        margin: 2em;
+    }
 }

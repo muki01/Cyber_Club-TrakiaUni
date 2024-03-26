@@ -4,7 +4,7 @@ footer {
     height: auto;
     background-color: #100D17;
     margin-top: auto;
-    padding: 40px 0;
+    padding: 3.3em 0;
     box-shadow: 0 1px 20px 0 rgba(17, 39, 105, 0.8);
 }
 
@@ -35,4 +35,13 @@ footer .socialMediaArea a{
 footer .socialMediaArea a:hover{
     color: #00d5ff;
     text-shadow: 0 2px 20px #00d5ff50;
+}
+
+@media screen and (max-width: 680px) {
+    footer{
+        font-size: 11px;
+    }
+    footer .socialMediaArea{
+        gap: 2em;
+    }
 }

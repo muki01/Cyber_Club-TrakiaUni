@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: 56em;
     background: radial-gradient(rgba(18, 13, 73, 0.4), rgba(0, 0, 0, 0.4)),
         url("../../images/bannner.gif");
     background-size: cover;
@@ -14,23 +14,36 @@
 .banner .textArea {
     margin: 11em auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.banner .siteName {
+.banner .textArea h2 {
     color: #fff;
     font-size: 5em;
     font-weight: 900;
-    line-height: 1.8em;
     text-align: center;
     text-shadow: 1px 5px 3px black;
     /* text-shadow: 1px 2px 0px #007bcdcc,1px 5px 10px black; */
 }
 
-.banner .siteName .colored {
-    font-size: 2em;
+.banner .textArea h1 {
+    font-size: 10em;
     font-family: "Fugaz One", sans-serif;
     font-weight: 400;
+    line-height: 1em;
     text-transform: uppercase;
     color: #007bcdcc;
     text-shadow: 1px 5px 0px rgb(255, 255, 255), 1px 10px 10px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 680px) {
+    .banner{
+        font-size: 10px;
+    }
+    .banner .textArea h2{
+        font-size: 4em;
+    }
 }

@@ -1,7 +1,7 @@
 section .cardsArea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 3.3em;
 }
 
 section .cardsArea .card {
@@ -15,7 +15,7 @@ section .cardsArea .card {
 }
 
 .card .cardContainer {
-    padding: 20px;
+    padding: 1.6em;
 }
 
 .card img {
@@ -24,29 +24,31 @@ section .cardsArea .card {
 }
 
 .card hr {
-    margin:4px 0;
+    margin:0.3em 0;
 }
 
 .card h1{
     color: #fff;
-    font-size: 30px;
+    font-size: 2.5em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
     text-align: center;
 }
 
 .card p {
-    font-size: 16px;
+    font-size: 1.3em;
     color: #A8A2B3;
-    margin: 20px 0;
+    margin: 1.6em 0;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
 }
 
-.pagination {
-    display: block;
-    text-align: center;
-    padding-top: 3em;
+.paginationArea{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
 }
 
 .pagination a {
@@ -54,19 +56,20 @@ section .cardsArea .card {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
     color: #fff;
-    padding: 8px 16px;
+    padding: 0.6em 1.3em;
     text-decoration: none;
+    text-shadow: 0 1px 0 #000;
     transition: 0.12s ease-in-out;
 }
 
 .pagination a.active {
     background-color: #0574be;
-    color: #fff;
+    color: white;
     border-radius: 5px;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #d1d1d1;
+    background-color: #c0c0c0;
     color: #000;
     border-radius: 5px;
 }
@@ -77,14 +80,17 @@ section .cardsArea .card {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    section .cardsArea {
-        grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1020px) {
+    main{
+        font-size: 11px;
     }
 }
 
 @media screen and (max-width: 620px) {
     section .cardsArea {
         grid-template-columns: 1fr;
+    }
+    .pagination .page:nth-child(n+5) {
+        display: none;
     }
 }

@@ -1,7 +1,7 @@
 .aboutArea{
     position: relative;
     z-index: 1;
-    margin: 40px 0;
+    margin: 3.3em 0;
     display: flex;
     justify-content: space-between;
     gap: 4em;
@@ -28,7 +28,7 @@
     font-weight: 700;
     font-size: 3.4em;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border-bottom: 3px solid rgba(0, 153, 255, 0.8);
 }
 
@@ -42,7 +42,7 @@
 .testArea{
     position: relative;
     z-index: 1;
-    margin: 40px 0;
+    margin: 3.3em 0;
     display: flex;
     justify-content: space-between;
     gap: 4em;
@@ -69,7 +69,7 @@
     font-weight: 700;
     font-size: 3.4em;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border-bottom: 3px solid rgba(0, 153, 255, 0.8);
 }
 
@@ -78,4 +78,30 @@
     font-weight: 400;
     font-size: 1.6em;
     color: #A8A2B3;
+}
+
+@media screen and (max-width: 680px) {
+    main{
+        font-size: 10px;
+    }
+    .aboutArea{
+        flex-direction: column;
+    }
+    .aboutArea .photoArea{
+        width: 100%;
+    }
+    .aboutArea .textArea{
+        width: 100%;
+    }
+
+    .testArea{
+        flex-direction: column-reverse;
+    }
+
+    .testArea .photoArea{
+        width: 100%;
+    }
+    .testArea .textArea{
+        width: 100%;
+    }
 }

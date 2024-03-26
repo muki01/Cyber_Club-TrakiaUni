@@ -1,7 +1,7 @@
 section .articleArea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 3.3em;
 }
 
 section .articleArea article {
@@ -18,7 +18,7 @@ section .articleArea article:hover{
 }
 
 article .articleContainer {
-    padding: 6px 20px;
+    padding: 0.5em 1.6em;
 }
 
 article img {
@@ -32,13 +32,13 @@ article img:hover {
 }
 
 article hr {
-    margin-bottom: 4px;
+    margin-bottom: 0.3em;
 }
 
 article a {
     display: inline-block;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.6em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -51,17 +51,17 @@ article a:hover {
 }
 
 article h2 {
-    margin-bottom: 6px;
+    margin-bottom: 0.5em;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
 }
 
 article p {
-    font-size: 16px;
+    font-size: 1.3em;
     color: #A8A2B3;
-    margin-bottom: 15px;
+    margin-bottom: 1.25em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
     /* TEXT LENGHT */
@@ -73,9 +73,11 @@ article p {
 
 
 .paginationArea{
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 3.5em;
 }
 
 .pagination a {
@@ -83,7 +85,7 @@ article p {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
     color: #fff;
-    padding: 8px 16px;
+    padding: 0.6em 1.3em;
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
     transition: 0.12s ease-in-out;
@@ -107,14 +109,24 @@ article p {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 840px) {
+    main{
+        font-size: 11px;
+    }
     section .articleArea {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 540px) {
     section .articleArea {
         grid-template-columns: 1fr;
+    }
+    section .articleArea article:hover{
+        scale: 1.02;
+    }
+    .pagination .page:nth-child(n+5) {
+        display: none;
     }
 }

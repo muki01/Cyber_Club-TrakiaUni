@@ -20,7 +20,7 @@
             </div>
 
             <!-- Navigation -->
-            <nav>
+            <nav class="navBar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About Us</a></li>
@@ -31,15 +31,24 @@
             </nav>
 
             <!-- User Icon -->
-            <div class="userArea">
-                <a class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
-                <div class="dropDown">
-                    <ul>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="#">My Favourites</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
+            <div class="rightSide">
+                <div class="userArea">
+                    <a class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">My Favourites</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menuArea">
+                    <div class="menuBtn">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,15 +144,17 @@
                 </div>
 
                 <!-- Pagination -->
-                <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
+                <div class="paginationArea">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active page">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">4</a>
+                        <a href="#" class="page">5</a>
+                        <a href="#" class="page">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -163,6 +174,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/navBar.js"></script>
+    <script src="scripts/scrollTop.js"></script>
 </body>
 
 </html>
