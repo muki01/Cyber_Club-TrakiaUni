@@ -165,6 +165,7 @@ section .moreArea .post a h2 {
     section .postArea{
         grid-template-columns: 1fr;
         padding: 2em;
+        gap: 0;
     }
     section .postArea .photoArea{
         order: -1;
