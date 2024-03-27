@@ -6,21 +6,20 @@ section .cardsArea {
 
 section .cardsArea .card {
     position: relative;
+    padding: 2.2em;
     background-color: #1B1525;
     box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
-    border-radius: 8px;
     border: 2px solid rgba(17, 39, 105, 0.8);
+    border-radius: 8px;
     z-index: 1;
     /* background: url("../../images/bg2.png"); */
 }
 
-.card .cardContainer {
-    padding: 1.6em;
-}
-
 .card img {
     width: 100%;
-    border-radius: 50%
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .card hr {
@@ -36,9 +35,9 @@ section .cardsArea .card {
 }
 
 .card p {
-    font-size: 1.3em;
     color: #A8A2B3;
     margin: 1.6em 0;
+    font-size: 1.3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
 }
@@ -52,25 +51,25 @@ section .cardsArea .card {
 }
 
 .pagination a {
+    padding: 0.6em 1.3em;
+    color: #fff;
     font-size: 1.3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
-    color: #fff;
-    padding: 0.6em 1.3em;
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
     transition: 0.12s ease-in-out;
 }
 
 .pagination a.active {
+    color: #fff;
     background-color: #0574be;
-    color: white;
     border-radius: 5px;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #c0c0c0;
     color: #000;
+    background-color: #c0c0c0;
     border-radius: 5px;
 }
 
@@ -80,9 +79,12 @@ section .cardsArea .card {
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 840px) {
     main{
         font-size: 11px;
+    }
+    section .cardsArea .card{
+        padding: 2em;
     }
 }
 

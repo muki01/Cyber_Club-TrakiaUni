@@ -80,7 +80,7 @@
     color: #A8A2B3;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 840px) {
     main{
         font-size: 10px;
     }

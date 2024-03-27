@@ -180,9 +180,12 @@ header .menuArea .menuBtn.openmenu .line-2 {
     header{
         font-size: 11px;
     }
+    header .navBar ul{
+        gap: 3em;
+    }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 840px) {
     header .menuArea {
         display: block;
     }

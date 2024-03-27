@@ -1,9 +1,9 @@
 section .contactsArea {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 10em;
-    padding: 1.6em 3.3em;
+    padding: 3.3em;
     background-color: #1B1525;
     box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
     border: 2px solid rgba(17, 39, 105, 0.8);
@@ -12,9 +12,9 @@ section .contactsArea {
 }
 
 section .contactsArea .addressArea {
-    width: 30%;
     position: relative;
     display: grid;
+    gap: 1.2em;
     grid-template-columns: 1fr;
 }
 
@@ -34,7 +34,6 @@ section .contactsArea .addressArea .box {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2.4em;
 }
 
 section .contactsArea .addressArea .box i {
@@ -59,17 +58,13 @@ section .contactsArea .addressArea .box p {
 }
 
 
-
-
-section .contactsArea .messageArea {
-    width: 70%;
-}
-
 section .contactsArea .messageArea h2 {
     font-size: 3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
+    line-height: 1em;
     color: #2f9fea;
+    margin-bottom: 0.5em;
 }
 
 section .contactsArea .messageArea p {
@@ -82,19 +77,19 @@ section .contactsArea .messageArea p {
 section .contactsArea .messageArea input,
 section .contactsArea .messageArea textarea {
     display: block;
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
     margin: 1.4em 0;
     height: 2em;
-    border: 3px solid #2f9fea;
+    border: 0.2em solid #2f9fea;
+    border-radius: 6px;
     outline: none;
+    background: none;
+    color: #fff;
     font-size: 1.4em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
-    background: none;
-    color: #fff;
-    border-radius: 6px;
-    padding: 1.5em 1.25em;
+    padding: 1.2em 1em;
     resize: none;
 }
 
@@ -105,14 +100,14 @@ section .contactsArea .messageArea textarea {
 
 section .contactsArea .messageArea .submitBtn {
     color: #fff;
+    background: #2f9fea;
     font-size: 1.6em;
     outline: none;
     border: none;
-    padding: 0.6em 2.4em;
     border-radius: 6px;
-    background: #2f9fea;
+    padding: 0.6em 2.4em;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: 0.12s ease-in-out;
 }
 
 section .contactsArea .messageArea .submitBtn:hover {
@@ -125,22 +120,18 @@ section .mapArea iframe {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 840px) {
     main{
         font-size: 11px;
     }
     section .contactsArea {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 2em;
     }
 
     section .contactsArea .addressArea {
-        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
-    }
-
-    section .contactsArea .messageArea {
-        width: 100%;
     }
 
     section .contactsArea .addressArea::before {

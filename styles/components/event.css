@@ -37,7 +37,8 @@ article hr {
 
 article a {
     display: inline-block;
-    color: #fff;
+    color: #2F9FEA;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
     font-size: 1.6em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
@@ -59,15 +60,15 @@ article h2 {
 }
 
 article p {
-    font-size: 1.3em;
     color: #A8A2B3;
     margin-bottom: 1.25em;
+    font-size: 1.3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
     /* TEXT LENGHT */
     display: -webkit-box;
     overflow: hidden;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
@@ -81,19 +82,19 @@ article p {
 }
 
 .pagination a {
+    padding: 0.6em 1.3em;
+    color: #fff;
     font-size: 1.3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 400;
-    color: #fff;
-    padding: 0.6em 1.3em;
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
     transition: 0.12s ease-in-out;
 }
 
 .pagination a.active {
+    color: #fff;
     background-color: #0574be;
-    color: white;
     border-radius: 5px;
 }
 
