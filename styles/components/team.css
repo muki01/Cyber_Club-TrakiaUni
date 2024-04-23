@@ -8,8 +8,8 @@ section .cardsArea .card {
     position: relative;
     padding: 2.2em;
     background-color: #1B1525;
-    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
-    border: 2px solid rgba(17, 39, 105, 0.8);
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
+    border: 2px solid #8707ff;
     border-radius: 8px;
     z-index: 1;
     /* background: url("../../images/bg2.png"); */
@@ -42,36 +42,6 @@ section .cardsArea .card {
     font-weight: 400;
 }
 
-.paginationArea{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    padding-top: 3.5em;
-}
-
-.pagination a {
-    padding: 0.6em 1.3em;
-    color: #fff;
-    font-size: 1.3em;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #000;
-    transition: 0.12s ease-in-out;
-}
-
-.pagination a.active {
-    color: #fff;
-    background-color: #0574be;
-    border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {
-    color: #000;
-    background-color: #c0c0c0;
-    border-radius: 5px;
-}
 
 @media screen and (max-width: 1400px) {
     section .cardsArea {
@@ -91,8 +61,5 @@ section .cardsArea .card {
 @media screen and (max-width: 620px) {
     section .cardsArea {
         grid-template-columns: 1fr;
-    }
-    .pagination .page:nth-child(n+5) {
-        display: none;
     }
 }

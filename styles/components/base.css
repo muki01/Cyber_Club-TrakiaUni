@@ -31,8 +31,7 @@ h2 {
 hr{
     border: none;
     height: 0.12em;
-    background-color: rgba(0, 153, 255, 0.8);
-    
+    border-bottom: #8707ff 2px solid;
 }
 
 .mainContainer {
@@ -45,7 +44,7 @@ main{
     flex: 1;
     position: relative;
     padding: 4em 0;
-    background-color: #101321;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #41296e 52%, #090338 100%);
 }
 
 main .shape1{

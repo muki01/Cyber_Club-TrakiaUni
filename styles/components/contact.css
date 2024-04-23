@@ -5,10 +5,12 @@ section .contactsArea {
     gap: 10em;
     padding: 3.3em;
     background-color: #1B1525;
-    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
-    border: 2px solid rgba(17, 39, 105, 0.8);
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
+    border: 2px solid #8707ff;
     border-radius: 10px;
     z-index: 1;
+
+    
 }
 
 section .contactsArea .addressArea {
@@ -26,7 +28,7 @@ section .contactsArea .addressArea::before {
     right: -35px;
     top: 50%;
     transform: translateY(-50%);
-    background: #2f9fea;
+    background: #8707ff;
 }
 
 section .contactsArea .addressArea .box {
@@ -38,7 +40,7 @@ section .contactsArea .addressArea .box {
 
 section .contactsArea .addressArea .box i {
     font-size: 3.8em;
-    color: #2f9fea;
+    color: #8707ff;
 }
 
 section .contactsArea .addressArea .box h2 {
@@ -63,7 +65,7 @@ section .contactsArea .messageArea h2 {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
     line-height: 1em;
-    color: #2f9fea;
+    color: #8707ff;
     margin-bottom: 0.5em;
 }
 
@@ -81,7 +83,7 @@ section .contactsArea .messageArea textarea {
     width: 100%;
     margin: 1.4em 0;
     height: 2em;
-    border: 0.2em solid #2f9fea;
+    border: 0.2em solid #8707ff;
     border-radius: 6px;
     outline: none;
     background: none;
@@ -100,7 +102,7 @@ section .contactsArea .messageArea textarea {
 
 section .contactsArea .messageArea .submitBtn {
     color: #fff;
-    background: #2f9fea;
+    background: #8707ff;
     font-size: 1.6em;
     outline: none;
     border: none;
@@ -111,7 +113,7 @@ section .contactsArea .messageArea .submitBtn {
 }
 
 section .contactsArea .messageArea .submitBtn:hover {
-    background: #237ebb;
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
     scale: 1.05;
 }
 

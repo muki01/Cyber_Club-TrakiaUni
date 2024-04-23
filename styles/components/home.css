@@ -29,7 +29,7 @@
     font-size: 3.4em;
     color: #fff;
     margin-bottom: 1em;
-    border-bottom: 3px solid rgba(0, 153, 255, 0.8);
+    border-bottom: #8707ff 2px solid;
 }
 
 .aboutArea .textArea p{
@@ -70,7 +70,7 @@
     font-size: 3.4em;
     color: #fff;
     margin-bottom: 1em;
-    border-bottom: 3px solid rgba(0, 153, 255, 0.8);
+    border-bottom: #8707ff 2px solid;
 }
 
 .testArea .textArea p{

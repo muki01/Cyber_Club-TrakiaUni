@@ -1,10 +1,7 @@
 header {
     position: relative;
     height: 12.5em;
-    background-color: #161525;
-    /* background: linear-gradient(to right, #0d1539, #101f5b, #0d1539); */
-    /* box-shadow: 0 1px 10px 0 rgba(0, 153, 255, 0.5), rgba(0, 153, 255, 0.5) 0px -40px 30px -35px inset; */
-    box-shadow: rgba(17, 39, 105, 0.8) 0px -40px 30px -30px inset;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #41296e 52%, #090338 100%);
 }
 
 header .mainContainer {
@@ -40,13 +37,14 @@ header .navBar ul a {
 
 header .navBar ul a.active {
     padding-bottom: 2px;
-    border-bottom: 3px solid #1fb4d2;
-    text-shadow: 0 2px 10px #00d5ff50;
+    border-bottom: 3px solid #8707ff;
+    text-shadow: 0 2px 10px rgba(135, 7, 255, 0.39);
 }
 
 header .navBar ul a:hover:not(.active) {
-    color: #00d5ff;
-    text-shadow: 0 2px 20px #00d5ff50;
+    /* smenqme cveta s tozi na zaglavieto kat go izmislim */
+    color: #8707ff; 
+    text-shadow: 0 2px 20px rgba(135, 7, 255, 0.39);
 }
 
 header .navBar ul a:active {
