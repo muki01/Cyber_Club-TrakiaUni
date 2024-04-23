@@ -159,6 +159,55 @@ section .moreArea .post a h2 {
     font-weight: 700;
 }
 
+/* Admin buttons
+ text-decoration: none;
+    text-align: center;
+    width: 40%;
+    padding: 0.8em 3.3em;
+    font-size: 1.6em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #8707ff;
+    border-radius: 10px;
+    text-shadow: 0 1px 0 #000;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.12s ease-in-out;
+*/
+.admin-btns{
+    font-size: 1.6em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.edit-btn{
+    color: #fff;
+    text-decoration: none;
+    background-color: #d3c333;
+    border-radius: 10px;
+    padding: 0.8em 4.2em;
+
+}
+
+.edit-btn:hover {
+    box-shadow: 0px 2px 20px rgba(228, 149, 2, 0.39);
+    scale: 1.05;
+}
+
+.dell-btn{
+    color: #fff;
+    text-decoration: none;
+    background-color: #ca1818;
+    border-radius: 10px;
+    padding: 0.8em 4.2em;
+}
+
+.dell-btn:hover {
+    box-shadow: 0px 2px 20px rgba(255, 0, 0, 0.39);
+    scale: 1.05;
+}
+
 @media screen and (max-width: 840px) {
     main{
         font-size: 11px;
@@ -175,11 +224,19 @@ section .moreArea .post a h2 {
         grid-template-columns: repeat(3, 1fr);
         gap: 2em;
     }
+    .admin-btns{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 640px) {
     section .moreArea .postsArea {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .admin-btns{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
