@@ -79,3 +79,38 @@ main form .submitBtn:hover {
     }
 
 }
+
+
+/* -------------------------------------------------------------  Create and Edit Event Forms*/
+
+main form .photo-add{
+    width: 100%;
+    padding: 1.2em 1em;
+    box-sizing: border-box;
+    height: 4em;
+    outline: none;
+    border: 2px solid #8707ff;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: none;
+}
+
+#subject{
+    padding: 1.2em 1em;
+    box-sizing: border-box;
+    background: none;
+    width: 100%;
+    height: 6em;
+    outline: none;
+    border: 2px solid #8707ff;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: none;
+    margin-bottom: 2em;
+}
