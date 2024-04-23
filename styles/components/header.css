@@ -84,8 +84,8 @@ header .userArea .user-icon {
 }
 
 header .userArea .user-icon:hover {
-    color: #00d5ff;
-    text-shadow: 0 2px 20px #00d5ff50;
+    color: #8707ff; 
+    text-shadow: 0 2px 20px rgba(135, 7, 255, 0.39);
 }
 
 header .userArea .dropDown {
@@ -120,8 +120,8 @@ header .userArea .dropDown ul li a {
 }
 
 header .userArea .dropDown ul li a:hover {
-    color: #00d5ff;
-    text-shadow: 0 2px 20px #00d5ff50;
+    color: #8707ff; 
+    text-shadow: 0 2px 20px rgba(135, 7, 255, 0.39);
 }
 
 header .userArea:hover .dropDown {
