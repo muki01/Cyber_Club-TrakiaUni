@@ -5,8 +5,8 @@ section .postArea {
     gap: 5em;
     padding: 3.3em;
     background-color: #1B1525;
-    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
-    border: 2px solid rgba(17, 39, 105, 0.8);
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
+    border: 2px solid #8707ff;
     border-radius: 10px;
     z-index: 1;
 }
@@ -25,7 +25,7 @@ section .postArea .textArea h1 {
     font-size: 3em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
-    color: #2F9FEA;
+    color: #ffff;
     margin: 0.6em 0;
 }
 
@@ -81,7 +81,7 @@ section .btnArea .btn {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #2F9FEA;
+    background-color: #8707ff;
     border-radius: 10px;
     text-shadow: 0 1px 0 #000;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -89,7 +89,7 @@ section .btnArea .btn {
 }
 
 section .btnArea .btn:hover {
-    background-color: #237ebb;
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
     scale: 1.05;
 }
 
@@ -99,7 +99,7 @@ section .btnArea .btn:hover {
 } */
 
 section .photoArea img{
-    border: 4px solid #2f9fea;;
+    border: 4px solid #8707ff;
 }
 
 section .moreArea {
@@ -107,14 +107,14 @@ section .moreArea {
     margin: 3.3em 0;
     padding: 1.6em;
     background-color: #1B1525;
-    box-shadow: 0px 2px 20px rgba(17, 39, 105, 0.8);
-    border: 2px solid rgba(17, 39, 105, 0.8);
+    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
+    border: 2px solid #8707ff;
     border-radius: 10px;
     z-index: 1;
 }
 
 section .moreArea h1 {
-    color: #2F9FEA;
+    color: #ffff;
     font-size: 2.4em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
@@ -132,7 +132,7 @@ section .moreArea .postsArea {
 
 section .moreArea .post img {
     width: 100%;
-    border: 2px solid #2f9fea;;
+    border: 2px solid #8707ff;
     border-radius: 10px;
     transition: 0.12s ease-in-out;
 }
@@ -149,7 +149,8 @@ section .moreArea .post a {
 }
 
 section .moreArea .post a:hover {
-    color: #00d5ff;;
+    /* iff needed change the color later */
+    color: #8707ff;
 }
 
 section .moreArea .post a h2 {

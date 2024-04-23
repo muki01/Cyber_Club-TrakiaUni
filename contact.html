@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="images/TRU.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="styles/contacts.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Trakia Cyber Club</title>
 </head>
 
@@ -38,7 +39,6 @@
                     <div class="dropDown">
                         <ul>
                             <li><a href="login.html">Login</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
                             <li><a href="#">My Favourites</a></li>
                             <li><a href="#">Logout</a></li>
                         </ul>
@@ -104,6 +104,9 @@
                             <input type="tel" name="phone" placeholder="Enter your phone" required>
                             <input type="text" name="title" placeholder="Enter title" required>
                             <textarea name="message" placeholder="Enter message" required></textarea>
+
+                            <div class="g-recaptcha" data-sitekey="6LclucQpAAAAAM0LybcKgLumuPNm4NwQK9CiHhAv"></div>
+
                             <button class="submitBtn" type="submit">Submit</button>
                         </form>
                     </div>
