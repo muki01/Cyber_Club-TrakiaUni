@@ -1,8 +1,10 @@
 main {
     background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../../images/cyber2.jpg");
+    url("../../images/drone-home.png");
     background-size: cover;
     background-position: center;
+    box-shadow: -13px 9px 157px 31px rgba(135, 7, 255, 0.39);
+    -webkit-box-shadow: -13px 9px 157px 31px rgba(135, 7, 255, 0.39);
 }
 .box {
     position: relative;

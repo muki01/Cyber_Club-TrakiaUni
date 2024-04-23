@@ -42,7 +42,7 @@ header .navBar ul a.active {
 }
 
 header .navBar ul a:hover:not(.active) {
-    /* smenqme cveta s tozi na zaglavieto kat go izmislim */
+
     color: #8707ff; 
     text-shadow: 0 2px 20px rgba(135, 7, 255, 0.39);
 }
@@ -92,7 +92,7 @@ header .userArea .dropDown {
     position: absolute;
     z-index: 10;
     left: -40px;
-    background-color: #161525;
+    background-color: #1B1525;
     border: 2px solid #8707ff;
     box-shadow: 0 1px 20px 0 rgba(135, 7, 255, 0.39);
     border-radius: 10px;
@@ -191,7 +191,7 @@ header .menuArea .menuBtn.openmenu .line-2 {
     header .navBar {
         position: absolute;
         top: 12.5em;
-        background-color: #161525;
+        background-color: #1B1525;
         width: 100%;
         max-height: 0px;
         overflow: hidden;
@@ -199,8 +199,8 @@ header .menuArea .menuBtn.openmenu .line-2 {
         transition: 0.3s;
         box-sizing: border-box;
         border-radius: 0 0 10px 10px;
-        border: 2px solid rgba(17, 39, 105, 0.8);
-        box-shadow: 0 1px 20px 0 rgba(17, 39, 105, 0.8);
+        border: 2px solid #8707ff;
+        box-shadow: 0 1px 20px 0 rgba(135, 7, 255, 0.39);
     }
 
     header .navBar.open {
