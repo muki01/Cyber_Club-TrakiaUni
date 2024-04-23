@@ -93,8 +93,8 @@ header .userArea .dropDown {
     z-index: 10;
     left: -40px;
     background-color: #161525;
-    border: 2px solid rgba(17, 39, 105, 0.8);
-    box-shadow: 0 1px 20px 0 rgba(17, 39, 105, 0.8);
+    border: 2px solid #8707ff;
+    box-shadow: 0 1px 20px 0 rgba(135, 7, 255, 0.39);
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;

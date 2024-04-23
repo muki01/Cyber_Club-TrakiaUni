@@ -37,7 +37,7 @@ article hr {
 
 article a {
     display: inline-block;
-    color: #8707ff;
+    color: #ffffff;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     font-size: 1.6em;
     font-family: "Kumbh Sans", sans-serif;
@@ -47,8 +47,9 @@ article a {
 }
 
 article a:hover {
-    color: #00d5ff;
-    text-shadow: 0 2px 20px #00d5ff50;
+    /* iff needed change the color later */
+    color: #8707ff;
+    text-shadow: 0 2px 20px rgba(135, 7, 255, 0.39);
 }
 
 article h2 {
