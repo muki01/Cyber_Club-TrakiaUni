@@ -43,5 +43,5 @@ CREATE TABLE content(
 );
 
 INSERT INTO `content` (`id`, `name`, `title`, `text`, `imgURL`) VALUES
-(1, 'Title1', 'Why you should choose our club?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus debitis maxime doloremque tempore nihil est expedita atque culpa error! Quas cum architecto temporibus ad officiis tempore dignissimos, adipisci provident!', 'https://s1.ezgif.com/tmp/ezgif-1-affac5b291.jpg'),
-(2, 'Title2', 'Lorem Ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus debitis maxime doloremque tempore nihil est expedita atque culpa error! Quas cum architecto temporibus ad officiis tempore dignissimos, adipisci provident!', 'https://s1.ezgif.com/tmp/ezgif-1-99b1f7b8f2.jpg');
+(1, 'Title1', 'Why you should choose our club?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus debitis maxime doloremque tempore nihil est expedita atque culpa error! Quas cum architecto temporibus ad officiis tempore dignissimos, adipisci provident!', 'https://github.com/muki01/Cyber_Club-TrakiaUni/assets/75759731/be426bfe-a69c-4388-b85d-cbe7dd0a6640'),
+(2, 'Title2', 'Lorem Ipsum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus debitis maxime doloremque tempore nihil est expedita atque culpa error! Quas cum architecto temporibus ad officiis tempore dignissimos, adipisci provident!', 'https://github.com/muki01/Cyber_Club-TrakiaUni/assets/75759731/5b45e3d7-964b-46c1-82e6-2d869dbe328e');

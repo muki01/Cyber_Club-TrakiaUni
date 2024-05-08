@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/TRU.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/edit.css">
     <title>Trakia Cyber Club</title>
 </head>
 
@@ -98,7 +98,7 @@
                         <input type="text" id="imgURL" name="imgURL" value="<?php echo $row['imgURL']; ?>"><br>
                     </div>
                     <div>
-                        <button type="submit">Save</button>
+                        <button type="submit" class="submitBtn">Save</button>
                     </div>
                 </form>
 
