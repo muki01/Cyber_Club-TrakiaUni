@@ -67,31 +67,47 @@
         <img class="shape1" src="./images/shape1.png">
         <img class="shape2" src="./images/shape2.png">
         <div class="mainContainer">
+            <?php
+                require 'inc/db.inc'; 
+                $table = "content";
+
+                $name1 = "Title1";
+                $query1 = "SELECT * FROM $table WHERE name = '$name1'";
+                $result1 = $mysqli->query($query1);
+                $row1 = $result1->fetch_assoc();
+
+                $name2 = "Title2";
+                $query2 = "SELECT * FROM $table WHERE name = '$name2'";
+                $result2 = $mysqli->query($query2);
+                $row2 = $result2->fetch_assoc();
+            ?>
+
             <section class="aboutArea">
                 <div class="textArea">
-                    <h2>Why you should choose our club?</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ea exercitationem
-                        tempora
-                        nemo sunt facilis quod sapiente atque, distinctio ipsam excepturi accusamus. Illum at
-                        officiis ipsa temporibus. Voluptas, exercitationem saepe?</p>
+                    <h2><?php echo $row1['title']; ?></h2>
+                    <p><?php echo $row1['text']; ?></p>
                 </div>
                 <div class="photoArea">
-                    <img src="images/photo1.webp" alt="">
+                    <img src="<?php echo $row1['imgURL']; ?>" alt="">
                 </div>
+                <a href="edit.php?id=<?php echo $row1['id']; ?>">Edit</a>
             </section>
+
             <hr>
             <section class="testArea">
                 <div class="photoArea">
-                    <img src="images/photo2.webp" alt="">
+                    <img src="<?php echo $row2['imgURL']; ?>" alt="">
                 </div>
                 <div class="textArea">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ea exercitationem
-                        tempora
-                        nemo sunt facilis quod sapiente atque, distinctio ipsam excepturi accusamus. Illum at
-                        officiis ipsa temporibus. Voluptas, exercitationem saepe?</p>
+                    <h2><?php echo $row2['title']; ?></h2>
+                    <p><?php echo $row2['text']; ?></p>
                 </div>
+                <a href="edit.php?id=<?php echo $row2['id']; ?>">Edit</a>
             </section>
+
+            <?php
+                $mysqli->close();
+            ?>
         </div>
     </main>
 
