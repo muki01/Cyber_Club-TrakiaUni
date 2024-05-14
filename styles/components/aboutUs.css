@@ -1,36 +1,59 @@
-section
-{
+.admin-btns{
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.edit-btn{
+    color: #fff;
+    text-decoration: none;
+    background-color: #d3c333;
+    border-radius: 10px;
+    padding: 0.3em 2em;
+    transition: 0.12s ease-in-out;
+}
+
+.edit-btn:hover {
+    box-shadow: 0px 2px 20px rgba(228, 149, 2, 0.39);
+    scale: 1.05;
+}
+
+section {
     position: relative;
     z-index: 1;
     color: #ffff;
     text-align: center;
 }
 
-.headline
-{
+.headline {
     margin: 1.2em;
     font-size: 3.5em;
 }
 
-.aboutus-paragraph
-{
+.aboutUsArea p {
     margin-bottom: 2em;
     font-size: 1.8em;
 }
-.partner-section
-{
+
+.partnersArea .partners {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 3.3em;
 }
 
-.partner img {
-    max-width: 250px; /* Makes sure the image is responsive and does not overflow its container */
-    height: 250px; /* Maintains the aspect ratio of the image */
-    vertical-align: middle; /* Aligns the image vertically */
-  }
+.partnersArea .partner img{
+    width: 100%;
+    border-radius: 14px;
+}
 
-  .partner {
-    padding: 10px; /* Space around each logo */
-    flex: 1; /* Ensures that each partner logo has equal width */
-    text-align: center; /* Centers the image in the div */
-  }
+
+@media screen and (max-width: 840px) {
+    .partnersArea .partners {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+}
+

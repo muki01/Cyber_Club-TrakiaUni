@@ -61,16 +61,34 @@
         <div class="mainContainer">
 
                 <section>
-                    <h2 class="headline">За нас</h2>
-                    <p class="aboutus-paragraph">
-                        КиберКлуб към Тракийския университет е част от Национален КиберКлуб-България и е посветен на обучение и развитие в областта на киберсигурността. 
-                        С навлизането на дигилизацията в ежедневието ни с неумоверно бързи темпове, човечеството има нужда да се чувства защитено в бъдещето,
-                        в което технологиите не са просто инструмент, а начин на живот.
-                    </p>
+                    <div class="aboutUsArea">
+                        <?php
+                            require 'inc/db.inc'; 
+                            $table = "content";
+
+                            $name1 = "AboutUs";
+                            $query1 = "SELECT * FROM $table WHERE name = '$name1'";
+                            $result1 = $mysqli->query($query1);
+                            $row1 = $result1->fetch_assoc();
+                        ?>
+
+                        <h2 class="headline"><?php echo $row1['title']; ?></h2>
+                        <p>
+                            <?php echo $row1['text']; ?>
+                        </p>
+                        <div class="admin-btns">
+                            <a class="edit-btn" href="edit.php?id=<?php echo $row1['id']; ?>">Edit</a>
+                        </div>
+
+                        <?php
+                        $mysqli->close();
+                        ?>
+                    </div>
+
                     <hr>
-                    <div class="partner-div">
+                    <div class="partnersArea">
                         <h2 class="headline">Партньори</h2>
-                        <div class="partner-section">
+                        <div class="partners">
                             <div class="partner">
                                 <img src="images/ISACA-background.png">
                             </div>

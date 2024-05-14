@@ -71,12 +71,12 @@
                 require 'inc/db.inc'; 
                 $table = "content";
 
-                $name1 = "Title1";
+                $name1 = "Home1";
                 $query1 = "SELECT * FROM $table WHERE name = '$name1'";
                 $result1 = $mysqli->query($query1);
                 $row1 = $result1->fetch_assoc();
 
-                $name2 = "Title2";
+                $name2 = "Home2";
                 $query2 = "SELECT * FROM $table WHERE name = '$name2'";
                 $result2 = $mysqli->query($query2);
                 $row2 = $result2->fetch_assoc();
@@ -90,8 +90,10 @@
                 <div class="photoArea">
                     <img src="<?php echo $row1['imgURL']; ?>" alt="">
                 </div>
-                <a href="edit.php?id=<?php echo $row1['id']; ?>">Edit</a>
             </section>
+            <div class="admin-btns">
+                <a class="edit-btn" href="edit.php?id=<?php echo $row1['id']; ?>">Edit</a>
+            </div>
 
             <hr>
             <section class="testArea">
@@ -102,8 +104,10 @@
                     <h2><?php echo $row2['title']; ?></h2>
                     <p><?php echo $row2['text']; ?></p>
                 </div>
-                <a href="edit.php?id=<?php echo $row2['id']; ?>">Edit</a>
             </section>
+            <div class="admin-btns">
+                <a class="edit-btn" href="edit.php?id=<?php echo $row2['id']; ?>">Edit</a>
+            </div>
 
             <?php
                 $mysqli->close();

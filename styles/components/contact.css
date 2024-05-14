@@ -1,3 +1,26 @@
+.admin-btns{
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.edit-btn{
+    color: #fff;
+    text-decoration: none;
+    background-color: #d3c333;
+    border-radius: 10px;
+    padding: 0.3em 2em;
+    transition: 0.12s ease-in-out;
+}
+
+.edit-btn:hover {
+    box-shadow: 0px 2px 20px rgba(228, 149, 2, 0.39);
+    scale: 1.05;
+}
+
 section .contactsArea {
     position: relative;
     display: grid;
@@ -9,8 +32,6 @@ section .contactsArea {
     border: 2px solid #8707ff;
     border-radius: 10px;
     z-index: 1;
-
-    
 }
 
 section .contactsArea .addressArea {
@@ -59,66 +80,8 @@ section .contactsArea .addressArea .box p {
     overflow-wrap: break-word;
 }
 
-
-section .contactsArea .messageArea h2 {
-    font-size: 3em;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 700;
-    line-height: 1em;
-    color: #8707ff;
-    margin-bottom: 0.5em;
-}
-
-section .contactsArea .messageArea p {
-    font-size: 1.4em;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 400;
-    color: #fff;
-}
-
-section .contactsArea .messageArea input,
-section .contactsArea .messageArea textarea {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 1.4em 0;
-    height: 2em;
-    border: 0.2em solid #8707ff;
-    border-radius: 6px;
-    outline: none;
-    background: none;
-    color: #fff;
-    font-size: 1.4em;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 400;
-    padding: 1.2em 1em;
-    resize: none;
-}
-
-section .contactsArea .messageArea textarea {
-    min-height: 9em;
-    padding-top: 0.5em;
-}
-
-section .contactsArea .messageArea .submitBtn {
-    color: #fff;
-    background: #8707ff;
-    font-size: 1.6em;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    padding: 0.6em 2.4em;
-    cursor: pointer;
-    transition: 0.12s ease-in-out;
-}
-
-section .contactsArea .messageArea .submitBtn:hover {
-    box-shadow: 0px 2px 20px rgba(135, 7, 255, 0.39);
-    scale: 1.05;
-}
-
 section .mapArea iframe {
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 
