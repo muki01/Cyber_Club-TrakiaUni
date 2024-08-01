@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/TRU.png">
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Trakia Cyber Club</title>
@@ -17,17 +17,17 @@
         <div class="mainContainer">
             <!-- Logo -->
             <div class="logoArea">
-                <a href="index.html"><img src="images/logo4.png" alt="site-logo"></a>
+                <a href="index.php"><img src="images/logo4.png" alt="site-logo"></a>
             </div>
 
             <!-- Navigation -->
             <nav class="navBar">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="team.php">Team</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +37,7 @@
                     <a class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
                     <div class="dropDown">
                         <ul>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login.php">Login</a></li>
                             <li><a href="#">My Favourites</a></li>
                             <li><a href="#">Logout</a></li>
                         </ul>

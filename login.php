@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/TRU.png">
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="styles/login.css">
     <title>Trakia Cyber Club</title>
@@ -17,17 +17,17 @@
         <div class="mainContainer">
             <!-- Logo -->
             <div class="logoArea">
-                <a href="index.html"><img src="images/logo4.png" alt="site-logo"></a>
+                <a href="index.php"><img src="images/logo4.png" alt="site-logo"></a>
             </div>
 
             <!-- Navigation -->
             <nav class="navBar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="team.php">Team</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +37,7 @@
                     <a class="user-icon"><i class="fa-regular fa-circle-user"></i></a>
                     <div class="dropDown">
                         <ul>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login.php">Login</a></li>
                             <li><a href="#">My Favourites</a></li>
                             <li><a href="#">Logout</a></li>
                         </ul>
@@ -53,34 +53,20 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="mainContainer">
             <div class="box">
-                <h1 class="formName">Създай евент</h1>
+                <h1 class="formName">Login</h1>
                 <form>
-                    <div>
-                        <label for="eventName">Име на евент:</label><br>
-                        <input type="text" id="eventName" name="eventname" placeholder="Името на евента" class="create-event-form"><br>
-                    </div>
-                    <div>
-                        <label for="location">Местоположение</label><br>
-                        <input type="text" id="location" name="location" class="create-event-form" pattern="" placeholder="Местоположение на провеждане"><br>
-                    </div>
-                    <div>
-                        <label for="startsOn">Дата и час</label><br>
-                        <input type="datetime-local" id="startsOn" name="startsOn" class="create-event-form" pattern="" placeholder="Дата и час на започване"><br>
-                    </div>
-                    <div>
-                        <label for="photo">Снимка</label><br>
-                        <input type="file" id="photo" name="photo" class="create-event-form photo-add" pattern=""><br>
-                    </div>
-                    <div>
-                        <label for="subject">Описание:</label><br>
-                        <textarea id="subject" name="subject" rows="4" placeholder="Напиши описание..."></textarea>
-                    </div>
-                    <div>
-                        <button type="button" id="SubmitBtn" onclick="alert('Hello World!')">Изпрати</button>
-                    </div>
+                    <label>Email</label>
+                    <input type="email" formControlName="email" name="email" placeholder="Enter your email" required />
+
+                    <label>Password</label>
+                    <input type="password" formControlName="password" name="password" placeholder="Enter your password"
+                        minlength="6" required />
+
+                    <button class="submitBtn" type="submit">Login</button>
                 </form>
             </div>
         </div>
