@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <?php 
+
+    ?>
+    
     <!-- Header -->
     <header>
         <div class="mainContainer">
